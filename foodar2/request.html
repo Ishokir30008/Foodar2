@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Request page</title>
+        <link rel="stylesheet" href="request.css">
+        <script src="requestform.js"></script>
+    </head>
+    <body onload="hideTotal()">
+        <header><h1>Welcome to Foodar!</h1></header>
+        <nav>
+            <ul>
+                <li style = "float: left"><a href="index.html" style="color: tomato;";>Foodar</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#about">Sign-in</a></li>
+              </ul>
+        </nav>
+
+        <h1>SUBMIT YOUR REQUEST</h1>
+        
+        <form action="" id="foodform">
+            <fieldset>
+                <legend><h3>Please fill out the form below.</h3></legend>
+                <label>Address:</label><br>
+                <input type = "email" name = "email" value = "Email" required>
+
+                <h3>Choose Your Style:</h3>
+
+                <label class="radiolabel"><input type="radio" name="style" value="classic" onclick="calculateTotal()"/>
+                Classic. This is a classic treatment </label><br>
+
+                <label class="radiolabel"><input type="radio" name="style" value="premium" onclick="calculateTotal()"/>
+                Premium pinky's up.</label><br>
+
+                <label class="radiolabel"><input type="radio" id="royal" name="style" value="royal" onclick="calculateTotal()"/>
+                Royal. Your food is served on a silver platter.</label><br><br>
+
+                <label>Restaurant:</label><br>
+                <input type = "text" name = "name" value = "Name" required><br><br>
+
+                <h3>Tip:</h3><br>
+
+                <label class="typelabel"></label><input type="radio" name="tip" value="ten" onclick="calculateTotal()"/>
+                10% They did their job.</label><br>
+
+                <label class="radiolabel"><input type="radio" name="tip" value="five" onclick="calculateTotal()"/>
+                15% They made you feel special.</label><br>
+
+                <label class="radiolabel"><input type="radio" name="tip" value="two" onclick="calculateTotal()"/>
+                20% I wanna give them more, but this is all i have.</label><br><br>
+
+                <div id="totalPrice" style="border: 2px solid red; padding: 5px; margin-right: 1550px;"></div>
+                <br>
+
+                <input type="submit" value="REQUEST" onclick="calculateTotal()"/>
+
+
+
+            </fieldset>
+            
+        </form>
+        <br><br>
+
+        <footer>
+            <div class = "row">
+                <div class="column1">
+                    <h4>SITE MAP</h4>
+                    <p><a href="index.html" style="text-decoration: none;">Home</a></p>
+                    <P><a href="register.html" style="text-decoration: none;">Register</a></P>
+                    <p><a href = "about.html" style="text-decoration: none;">How it All Works</a></p>
+                </div>
+        
+                <div class="column1">
+                    <h4>LEGAL</h4>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                </div>
+        
+                <div class="column1">
+                    <h4 style="color: tomato;">FOOD IS LIFE:)</h4>
+                </div>
+                
+        
+            </div>
+           
+            <section class="copy"><p>&copy 2020. All rights reserved.</p></section>
+                
+            
+        </footer>
+        
+
+    </body>
+</html>

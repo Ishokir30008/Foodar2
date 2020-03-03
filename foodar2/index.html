@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Foodar Home page</title>
+        <link rel = "stylesheet" type = "text/css"  href="home.css">
+        <script src="functions.js"></script>
+
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li style = "float: left"><a href="index.html" style="color: tomato;";>Foodar</a></li>
+                <li><a href="request.html">Request</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#about">Sign-in</a></li>
+              </ul>
+        </nav>
+
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1 style="font-size: 50px;">TRY A NEW MEAL TODAY!</h1>
+            </div>
+        </div>
+        
+
+
+        <section>
+          <h3>Find a driver near you!</h3>
+          <p>Type in your zipcode below and click Go! to find a driver near you.</p>
+              
+          <form name="myForm" onsubmit="return(validate());">
+            <input type = "text" name = "Zip" value = "Zipcode" required>
+            <input type="submit" value="Go!">
+            <p id="demo"></p>
+
+
+            <script>
+                function validate(){
+                    if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+                    document.myForm.Zip.value.length != 5 ) {
+                    document.getElementById("demo").innerHTML = "Not valid! Zip must be in the format #####.";;
+                    document.myForm.Zip.focus() ;
+                    return false;
+                    }
+                    return(true);
+                    }
+            </script>
+
+          </form>
+
+        </section>
+          <br>
+
+          <div class = "row">
+            <h2><i>FEATURE RESTAURANTS</i></h2>  
+            <div class="column1">
+                <div class="tooltip" style="display: block; margin-left: auto; margin-right: auto;">
+                    <img src="rest.jpg" alt="Paris" width="300" height="300">
+                    <span class="tooltiptext">Order today and recieve 15% your total meal.</span>
+                </div>
+                <h3>FISH & CHIPS GALLORE!</h3>
+                <p style="text-align: center;">Since 1968, Fish & Chips Gallore! has served the bay area with its palatable array of fried fish and sailor's choice dessert.</p>
+            </div>
+    
+            <div class="column1">
+                <div class="tooltip" style="display: block; margin-left: auto; margin-right: auto;">
+                    <img src="rest1.jpg" alt="Paris" width="300" height="300">
+                    <span class="tooltiptext">Order 2 plates of pepper soup and get a free soda on us today.</span>
+                </div>
+                <h3>NAIJA PEPPERSOUP AND BAR</h3>
+                <p style="text-align: center;">When you actually, really desire a sumptous pepper soup, you order from Naija ppersoup and bar.</p>
+                
+            </div>
+    
+            <div class="column1">
+                <div class="tooltip" style="display: block; margin-left: auto; margin-right: auto;">
+                    <img src="rest2.jpg" alt="Paris" width="300" height="300">
+                    <span class="tooltiptext">Just for you, we'll knock off 10% to make your wallet feel good too..</span>
+                </div>
+                <h3>BAKU FUFU JOLLOF</h3>
+                <P style="text-align: center;">Welcome to your favorite part of breakfast,lunch, dinner, any meal</P>
+            </div>
+            
+    
+        </div>
+       
+
+          <footer>
+            <div class = "row">
+                <div class="column1" style="text-align: center;">
+                    <h4>SITE MAP</h4>
+                    <p><a href="index.html" style="text-decoration: none;">Home</a></p>
+                    <P><a href="register.html" style="text-decoration: none;">Register</a></P>
+                    <p><a href = "about.html" style="text-decoration: none;">How it All Works</a></p>
+                </div>
+        
+                <div class="column1" style="text-align: center;">
+                    <h4>LEGAL</h4>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                </div>
+        
+                <div class="column1" style="text-align: center;">
+                    <h4 style="color: tomato;">FOOD IS LIFE:)</h4>
+                </div>
+                
+        
+            </div>
+           
+            <section class="copy"><p>&copy 2020. All rights reserved.</p></section>
+                
+            
+        </footer>
+        
+    </body>
+</html>

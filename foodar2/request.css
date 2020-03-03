@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+
+h1{
+    color: brown;
+}
+
+.container {
+    width: 780px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.about h3{
+    text-align: center;
+    color: gold;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  /* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: tomato;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
+
+ 
+
+
+.column1{
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    
+
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.copy{
+    text-align: center;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
